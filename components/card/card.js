@@ -17,7 +17,8 @@ export function createCharacterCard(character) {
           <dd class="card__info-description">Alive</dd>
           <dt class="card__info-title">${character.type}</dt>
           <dd class="card__info-description"></dd>
-          <dt class="card__info-title">${character.location.id}</dt>
+          <dt class="card__info-title">${character.location.name}</dt>
+
           <dd class="card__info-description">51</dd>
         </dl>
       </div>
