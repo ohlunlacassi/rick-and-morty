@@ -1,5 +1,3 @@
-const cardList = document.querySelector('[data-js="card-container"]');
-
 export function createCharacterCard(character) {
   const characterList = `<li class="card">
       <div class="card__image-container">
@@ -17,12 +15,12 @@ export function createCharacterCard(character) {
           <dd class="card__info-description">Alive</dd>
           <dt class="card__info-title">${character.type}</dt>
           <dd class="card__info-description"></dd>
-          <dt class="card__info-title">${character.location.name}</dt>
+          <dt class="card__info-title">${character.episode.length}</dt>
 
           <dd class="card__info-description">51</dd>
         </dl>
       </div>
     </li>`;
 
-  cardList.innerHTML += characterList;
+  return characterList;
 }
