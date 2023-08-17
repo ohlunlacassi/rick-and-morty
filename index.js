@@ -39,7 +39,7 @@ function paginationDisplay() {
 //     const newCard = createCharacterCard(result);
 //     cardContainer.innerHTML += newCard;
 //   });
-//   paginationDisplay();
+//  paginationDisplay();
 // }
 
 // moreCards();
