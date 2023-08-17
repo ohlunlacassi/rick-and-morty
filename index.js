@@ -22,6 +22,7 @@ async function fetchCharacters() {
   const json = await response.json();
   maxPage = json.info.pages;
   return json.results;
+
 }
 function paginationDisplay() {
   pagination.textContent = `${page}/${maxPage}`;
