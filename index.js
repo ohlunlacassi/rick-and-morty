@@ -27,10 +27,12 @@ async function fetchCharacters() {
   cardContainer.innerHTML = "";
   paginationDisplay();
 
+
   characters.forEach((character) => {
     const newCard = createCharacterCard(character);
     cardContainer.append(newCard);
   });
+
 }
 
 fetchCharacters();
