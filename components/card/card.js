@@ -1,5 +1,7 @@
 export function createCharacterCard(character) {
-  const characterList = `<li class="card">
+  const liElement = document.createElement("li");
+  liElement.classList.add("card");
+  liElement.innerHTML = `
       <div class="card__image-container">
         <img
           class="card__image"
@@ -20,7 +22,7 @@ export function createCharacterCard(character) {
           <dd class="card__info-description">51</dd>
         </dl>
       </div>
-    </li>`;
+    `;
 
-  return characterList;
+  return liElement;
 }
