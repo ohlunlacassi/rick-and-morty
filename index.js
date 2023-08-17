@@ -11,17 +11,17 @@ const nextButton = document.querySelector('[data-js="button-next"]');
 const pagination = document.querySelector('[data-js="pagination"]');
 
 // States
-const maxPage = 1;
-const page = `${info.pages}`;
+const maxPage = ;
+let page = 1;
 const searchQuery = "";
 
-async function fetchCharacters() {
-  const response = await fetch(
-    `"https://rickandmortyapi.com/api/character?page=${info.pages}"`
-  );
+async function fetchCharacters(page) {
+  const response = await fetch(`https://rickandmortyapi.com/api/character?page=${page}`);
   const json = await response.json();
-  console.log(json.results);
-  return json.results;
+  return {character: json.results,
+    maxPage: json.info.pages
+  }
+
 }
 
 fetchCharacters();
